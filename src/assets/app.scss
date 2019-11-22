@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import './_variables.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif!important;
+    position: relative!important;
+    height: initial!important;
+    background: #f1f2fc!important;
+}
+
+    //font-family: wildYouth, "Brush Script MT", cursive;
+.sidebar-wrapper 
+.router-link-exact-active{
+    background-color: #3f51b5;
+    color:#fff !important;
+    
+    
+}
+
+.text-primary {
+    font-weight: bold;
+    font-size: 20px;
+    color: #6cb2eb !important;
+  }
+  .bcustom-primary {
+    color: #fff;
+    background: #6cb2eb !important;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+  
+    &:hover {
+      color: #fff;
+      background: #e4a747;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  .product-grid {
+    .card-price {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      color: #fff;
+      padding: 10px;
+      border-radius: 0 0 10px 0;
+      line-height: 1rem;
+      background: rgba(0, 0, 0, 0.8);
+      .price-text {
+        font-size: 0.7rem;
+        text-transform: capitalize;
+      }
+    }
+    .card-body {
+      background: rgb(67, 69, 70);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 0.9rem;
+    }
+    .btn-compare {
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto;
+      position: absolute;
+      top: 57%;
+      right: 0;
+      transform: translateX(30px);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .product-grid:hover > .btn-compare {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  @media only screen and(max-width: 768px) {
+    .product-list {
+      text-align: center;
+    }
+  }
+  
+  .modal-custom-header {
+    color: #fff;
+    font-size: 1rem;
+    background: #6cb2eb !important;
+    border-radius: 0;
+  }
+
+@media print {
+	.table-responsive table{
+		background-color: transparent !important;
+	}
+
+}
