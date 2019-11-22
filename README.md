@@ -1,4 +1,4 @@
-# start-appl
+# vue resort
 
 ## Project setup
 ```
